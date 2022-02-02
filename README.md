@@ -1,5 +1,12 @@
-This is a template repository for XP Farm.
+Simple, given a string of words, return the length of the shortest word(s).
 
-```
-gh repo create some-name --public --confirm --template="github.ibm.com/William-Glasse/jumpstart"
-```
+String will never be empty and you do not need to account for different data types.
+
+const chai = require("chai");
+const assert = chai.assert;
+chai.config.truncateThreshold=0;
+
+assert.strictEqual(findShort("bitcoin take over the world maybe who knows perhaps"), 3);
+assert.strictEqual(findShort("turns out random test cases are easier than writing out basic ones"), 3); 
+assert.strictEqual(findShort("Let's travel abroad shall we"), 2);
+
