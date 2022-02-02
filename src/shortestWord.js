@@ -1,3 +1,2 @@
-const shortestWord = (word) => word.length;
-
+const shortestWord = (word) => (word ? word.length : null);
 module.exports = shortestWord;
